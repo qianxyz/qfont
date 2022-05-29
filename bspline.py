@@ -4,12 +4,12 @@ import matplotlib.pyplot as plt
 
 class BSpline:
 
-    def __init__(self, control_points, order) -> None:
+    def __init__(self, control_points, order=3) -> None:
         """Construct B-spline with given control points and order.
 
         Args:
             control_points: array of shape (d, 2).
-            order: degree of the curve, starting from 0.
+            order: degree of the curve, default to 3 (cubic)
         """
         self.control_points = control_points
         self.order = order
@@ -63,7 +63,7 @@ if __name__ == '__main__':
         (0.8, 0.2),
         (1.0, 0.7),
     ])
-    bspline = BSpline(test_control_points, order=3)
+    bspline = BSpline(test_control_points)
     xys = bspline.curve()
     plt.plot(*zip(*test_control_points), 'o-')
     plt.plot(*zip(*xys))
