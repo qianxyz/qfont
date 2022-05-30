@@ -13,5 +13,4 @@ Your `conda base` environment shall suffice.
 
 - `bezier.py` : Bezier curve with de Casteljau algorithm.
 - `bspline.py` : B-spline with Cox-de Boor recursion formula.
-
-To be updated ...
+- `glyph.py`: Glyphs for letter `Q` and `q`, with B-splines.
