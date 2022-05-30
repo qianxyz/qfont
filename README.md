@@ -6,7 +6,7 @@ with Bezier curves and B-splines.
 
 ## Requirements
 
-Requires `numpy` for vectorization and `mathplotlib` for plotting.
+Requires `numpy` for vectorization and `matplotlib` for plotting.
 Your `conda base` environment shall suffice.
 
 ## Contents
