@@ -83,8 +83,9 @@ class Bezier:
             artists[-1].set_data(x_data, y_data)
             return artists
 
-        _ = FuncAnimation(fig, update, frames=np.linspace(0, 1, num=50),
-                          init_func=init, blit=True, interval=50)
+        ani = FuncAnimation(fig, update, frames=np.linspace(0, 1, num=50),
+                            init_func=init, blit=True, interval=50)
+        # ani.save("images/bezier-animation.gif", fps=30)
         plt.show()
 
 
