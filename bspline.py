@@ -56,6 +56,10 @@ class BSpline:
 
 
 if __name__ == '__main__':
+    plt.xlim(-0.1, 1.1)
+    plt.ylim(-0.1, 1.1)
+    plt.axis("off")
+
     test_control_points = np.array([
         (0.0, 0.0),
         (0.1, 0.6),
@@ -65,6 +69,8 @@ if __name__ == '__main__':
     ])
     bspline = BSpline(test_control_points)
     xys = bspline.curve()
+
     plt.plot(*zip(*test_control_points), 'o-')
     plt.plot(*zip(*xys))
+    plt.savefig("images/bspline.png")
     plt.show()
