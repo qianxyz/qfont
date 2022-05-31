@@ -110,5 +110,5 @@ def plot_bspline(ctrl_point_list, clean=False, save=None):
 
 if __name__ == '__main__':
     plot_bspline(UPPER_Q, clean=True)
-    plot_bspline(UPPER_Q, save="upper")
+    # plot_bspline(UPPER_Q, save="upper")
     plot_bspline(LOWER_Q, clean=True)

@@ -72,5 +72,5 @@ if __name__ == '__main__':
 
     plt.plot(*zip(*test_control_points), 'o-')
     plt.plot(*zip(*xys))
-    plt.savefig("images/bspline.png")
+    # plt.savefig("images/bspline.png")
     plt.show()
